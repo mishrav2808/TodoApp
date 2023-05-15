@@ -11,7 +11,7 @@ app.use(express.json());
 const router = require('express').Router();
 
 const { default: mongoose } = require('mongoose');
-const todoItemsModel = require('./models/todolist');
+const todoItemsModel = require('./routes/todolistmodel');
 
 const mongoUri = 'mongodb+srv://mishrav2808:zaqwsxcde@varsha.dlq2uky.mongodb.net/?retryWrites=true&w=majority'
 mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true });
