@@ -1,6 +1,6 @@
 const router = require('express').Router();
 
-const Todos = require('./todolist');
+const Todos = require('./todolistmodel');
 
 router.get('/tasks', async (req,res)=>{
     try{
